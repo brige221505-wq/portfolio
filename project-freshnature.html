@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>鲜境 FRESHNATURE · 唤醒原始野性 | 吴海宁作品</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+SC:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-deep: #030308;
+    --text-primary: #eeedf5;
+    --text-secondary: #a8a7c0;
+    --text-muted: #636380;
+    --accent: #2563eb;
+    --accent2: #06b6d4;
+    --border: rgba(255,255,255,0.06);
+    --font: "Inter", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+    --section-px: clamp(24px, 6vw, 100px);
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--font);
+    background: var(--bg-deep);
+    color: var(--text-primary);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  .back-bar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    padding: 16px var(--section-px);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    background: rgba(3,3,8,0.7);
+    border-bottom: 1px solid var(--border);
+  }
+  .back-link {
+    display: inline-flex; align-items: center; gap: 8px;
+    color: var(--text-secondary); text-decoration: none;
+    font-size: 0.9rem; font-weight: 500; transition: color 0.3s;
+  }
+  .back-link:hover { color: var(--text-primary); }
+  .back-link svg { width: 18px; height: 18px; }
+  .project-hero {
+    padding: 100px var(--section-px) 60px;
+    max-width: 900px; margin: 0 auto; text-align: center;
+  }
+  .project-hero h1 {
+    font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 800;
+    letter-spacing: -0.03em; line-height: 1.15; margin-bottom: 28px;
+  }
+  .project-hero .intro {
+    font-size: 1.08rem; color: var(--text-secondary); line-height: 1.85;
+    max-width: 780px;
+  }
+  .video-section {
+    padding: 0 var(--section-px) 60px;
+    max-width: 1100px; margin: 0 auto;
+  }
+  .video-wrap {
+    position: relative; width: 100%;
+    background: #000; border-radius: 20px; overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .video-wrap video { width: 100%; display: block; max-height: 70vh; }
+
+  .mini-videos {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    max-width: 100%;
+  }
+  .mini-videos .video-wrap { min-height: 300px; }
+  .mini-videos .video-wrap video { max-height: none; width:100%; height:100%; object-fit:cover; }
+
+  .content-section {
+    padding: 0 var(--section-px) 60px;
+    max-width: 1100px; margin: 0 auto;
+  }
+  .content-section .desc-text {
+    font-size: 1.05rem; color: var(--text-secondary); line-height: 1.9;
+    margin-bottom: 32px; max-width: 780px; margin-left: auto; margin-right: auto;
+    text-align: center;
+  }
+  .content-section img {
+    width: 100%; border-radius: 20px; display: block;
+    border: 1px solid var(--border);
+  }
+  .project-footer {
+    padding: 40px var(--section-px); text-align: center;
+    color: var(--text-muted); font-size: 0.85rem;
+    border-top: 1px solid var(--border); max-width: 1100px; margin: 0 auto;
+  }
+  @media (max-width: 768px) {
+    .project-hero { padding: 80px var(--section-px) 40px; }
+    .project-hero h1 { font-size: 1.7rem; }
+    .project-hero .intro { font-size: 0.95rem; }
+    .video-section, .content-section { padding: 0 var(--section-px) 40px; }
+    .content-section .desc-text { font-size: 0.93rem; }
+    .mini-videos { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="back-bar">
+  <a href="index.html#projects" class="back-link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5m7-7-7 7 7 7"/></svg>
+    返回作品集
+  </a>
+</div>
+
+<section class="project-hero">
+  <h1>鲜境 FRESHNATURE &#8212; 唤醒原始野性</h1>
+  <p class="intro">"身在都市，心归自然。"在猫粮的视觉全案中，我试图打破传统宠物食品温吞的视觉套路，将"原始的狩猎本能"与"现代的居家陪伴"进行强烈的视觉对撞。从丛林深处汲取灵感，我们将 90% 的动物性原材转化为极具张力的自然意象；再通过严谨的电商视觉逻辑，将品牌概念平稳落地。这不仅是一次视觉的探索，更是为"天然纯粹"的品牌基因寻找最精准的商业表达方式。</p>
+</section>
+
+<section class="video-section">
+  <div class="video-wrap">
+    <video id="projectVideo" loop playsinline controls></video>
+  </div>
+</section>
+
+<section class="content-section">
+  <p class="desc-text">当野性回归日常，每一餐都是一次自然的洗礼。<br/>剥离掉外在的狂野，在极简的现代空间里，它是温柔的陪伴，也是连接人与自然的隐形纽带。</p>
+</section>
+
+<section class="content-section">
+  <img src="images/猫粮产品图.png" alt="鲜境 FRESHNATURE 产品图" style="max-width:75%;margin:0 auto;"/>
+  <img src="images/猫粮场景.jpeg" alt="鲜境 FRESHNATURE 场景" style="max-width:75%;margin:24px auto 0;"/>
+</section>
+
+<section class="content-section">
+  <div class="mini-videos">
+    <div class="video-wrap"><video src="images/猫粮1.mp4" autoplay muted loop playsinline></video></div>
+    <div class="video-wrap"><video src="images/猫粮2.mp4" autoplay muted loop playsinline></video></div>
+    <div class="video-wrap"><video src="images/猫粮3.mp4" autoplay muted loop playsinline></video></div>
+    <div class="video-wrap"><video src="images/猫粮4.mp4" autoplay muted loop playsinline></video></div>
+  </div>
+</section>
+
+<section class="content-section">
+  <p class="desc-text">视觉的张力，最终要回归商业的转化。<br/>在 618 的促销视觉构建中，我们用极具冲击力的红色大促氛围，碰撞产品包装沉稳的紫色调，让"90%动物性原料"的核心卖点在第一视觉层级瞬间引爆。</p>
+  <img src="images/猫粮首页.png" alt="鲜境 FRESHNATURE 首页" style="max-width:75%;margin:0 auto;"/>
+</section>
+
+<section class="content-section">
+  <p class="desc-text">从 0 肉粉成型的低温慢烘工艺，到专属农场的自然放养。详情页的设计，我们摒弃了冗杂的堆砌，采用清晰的网格化布局（Grid System）。用理性的数据可视化与透明的工艺拆解，回应消费者的每一份挑剔。</p>
+  <img src="images/猫粮详情页.png" alt="鲜境 FRESHNATURE 详情页" style="max-width:75%;margin:0 auto;"/>
+</section>
+
+<footer class="project-footer">
+  &copy; 2026 吴海宁. All rights reserved.
+</footer>
+
+<script>
+  var video = document.getElementById('projectVideo');
+  video.src = 'images/猫粮广告.mp4';
+  video.load();
+  var started = false;
+  video.parentElement.addEventListener('mouseenter', function() {
+    if (!started) { started = true; video.muted = false; video.play().catch(function() {}); }
+    else { video.muted = false; }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>极曜 X AeroTech — 智能恒温花洒 | 吴海宁作品</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+SC:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-deep: #030308;
+    --bg-card: rgba(10,10,30,0.6);
+    --text-primary: #eeedf5;
+    --text-secondary: #a8a7c0;
+    --text-muted: #636380;
+    --accent: #2563eb;
+    --accent2: #06b6d4;
+    --border: rgba(255,255,255,0.06);
+    --font: "Inter", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+    --section-px: clamp(24px, 6vw, 100px);
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--font);
+    background: var(--bg-deep);
+    color: var(--text-primary);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  /* Back button */
+  .back-bar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    padding: 16px var(--section-px);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    background: rgba(3,3,8,0.7);
+    border-bottom: 1px solid var(--border);
+  }
+  .back-link {
+    display: inline-flex; align-items: center; gap: 8px;
+    color: var(--text-secondary); text-decoration: none;
+    font-size: 0.9rem; font-weight: 500; transition: color 0.3s;
+  }
+  .back-link:hover { color: var(--text-primary); }
+  .back-link svg { width: 18px; height: 18px; }
+
+  /* Hero */
+  .project-hero {
+    padding: 100px var(--section-px) 60px;
+    max-width: 900px; margin: 0 auto; text-align: center;
+  }
+  .project-hero h1 {
+    font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 800;
+    letter-spacing: -0.03em; line-height: 1.15; margin-bottom: 28px;
+  }
+  .project-hero .intro {
+    font-size: 1.08rem; color: var(--text-secondary); line-height: 1.85;
+    max-width: 780px;
+  }
+
+  /* Video section */
+  .video-section {
+    padding: 0 var(--section-px) 60px;
+    max-width: 1100px; margin: 0 auto;
+  }
+  .video-wrap {
+    position: relative; width: 100%;
+    background: #000; border-radius: 20px; overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .video-wrap video {
+    width: 100%; display: block; max-height: 70vh;
+  }
+
+  /* Image + text sections */
+  .content-section {
+    padding: 0 var(--section-px) 60px;
+    max-width: 1100px; margin: 0 auto;
+  }
+  .content-section .desc-text {
+    font-size: 1.05rem; color: var(--text-secondary); line-height: 1.9;
+    margin-bottom: 32px; max-width: 780px; margin-left: auto; margin-right: auto;
+    text-align: center;
+  }
+  .content-section img {
+    width: 100%; border-radius: 20px; display: block;
+    border: 1px solid var(--border);
+  }
+
+  /* Footer */
+  .project-footer {
+    padding: 40px var(--section-px); text-align: center;
+    color: var(--text-muted); font-size: 0.85rem;
+    border-top: 1px solid var(--border); max-width: 1100px; margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
+    .project-hero { padding: 80px var(--section-px) 40px; }
+    .project-hero h1 { font-size: 1.7rem; }
+    .project-hero .intro { font-size: 0.95rem; }
+    .video-section, .content-section { padding: 0 var(--section-px) 40px; }
+    .content-section .desc-text { font-size: 0.93rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="back-bar">
+  <a href="index.html#projects" class="back-link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5m7-7-7 7 7 7"/></svg>
+    返回作品集
+  </a>
+</div>
+
+<section class="project-hero">
+  <h1>极曜 X AeroTech —<br/>智能恒温花洒</h1>
+  <p class="intro">极曜 X AeroTech 是一款创新型智能恒温花洒，通过直觉化的琴键触控与数字温显，将日常沐浴转化为更沉浸、更具感官体验的私密时刻。它专为现代卫浴空间而设计，将智能科技与严谨的几何美学自然融合，重新定义了人与水流之间的互动方式。灵感源于对水流形态与恒温的精准掌控，极曜将科技的理性引入产品之中，使其不仅成为精准的功能反馈界面，也带来情绪上的深度连接。从宏观的三维空间结构到微观的高清控制面板，它仿佛拥有生命，能够感知温度、回应触碰，并自然融入当代的品质生活。</p>
+</section>
+
+<section class="video-section">
+  <div class="video-wrap">
+    <video id="projectVideo" loop playsinline controls></video>
+  </div>
+</section>
+
+<section class="content-section">
+  <p class="desc-text">褪去浮华，回归几何秩序。<br/>为了精准呈现极曜的结构张力与空间体量，不仅构建了严谨的三视图，更引入了顶视图视角，将最真实的比例毫无保留地展露。</p>
+  <img src="images/花洒产品图.png" alt="极曜 X AeroTech 花洒产品图"/>
+</section>
+
+<section class="content-section">
+  <p class="desc-text">光影之下，水流亦有其形态。<br/>多景别分镜拆解，捕捉水珠与感官共鸣的瞬间。<br/>恒温的不仅是水，更是科技赋予日常生活的温度。</p>
+  <img src="images/分镜图.png" alt="极曜 X AeroTech 分镜图"/>
+</section>
+
+<footer class="project-footer">
+  &copy; 2026 吴海宁. All rights reserved.
+</footer>
+
+<script>
+  var video = document.getElementById('projectVideo');
+  video.src = 'images/花洒产品广告.mp4';
+  video.load();
+
+  // Mouse hover: start playing with sound
+  var started = false;
+  video.parentElement.addEventListener('mouseenter', function() {
+    if (!started) {
+      started = true;
+      video.muted = false;
+      video.play().catch(function() {});
+    } else {
+      video.muted = false;
+    }
+  });
+</script>
+</body>
+</html>
